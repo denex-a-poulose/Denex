@@ -1,3 +1,3 @@
 # Denex
-This site is **under construction**.
+This is my **portfolio website**
 
