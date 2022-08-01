@@ -17,6 +17,7 @@ body {
   overflow: hidden;
   background-color: #181818;
   position: fixed;
+  opacity:80%;
   width: 100%;
   z-index: 999;
 }
