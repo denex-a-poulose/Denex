@@ -17,9 +17,11 @@ body {
   overflow: hidden;
   background-color: #181818;
   position: fixed;
-  opacity:80%;
   width: 100%;
   z-index: 999;
+
+
+
 }
 
 
@@ -103,6 +105,21 @@ body {
   filter: drop-shadow(4px 3px 5px #00ce79)
  
 }
+.profile:hover{
+
+  transform: rotateX(-20deg);
+
+  transform: rotateY(-10deg);
+
+    filter: drop-shadow(4px 3px 8px #77eda4);
+
+}
+
+
+
+
+
+
 
 
 .me {
