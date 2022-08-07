@@ -7,7 +7,7 @@
   <title>Denex A Poulose</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  <link rel="icon" type="image/x-icon" href="/Denex/Icon.png">
+  <link rel="icon" type="image/x-icon" href="/Icon.png">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,47 +21,77 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <!----Navbar----->
 
-  <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">D-</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <span class="material-symbols-outlined menu">
-        sort
+  <nav class="navbar nav-bar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">D-</a>
+
+      <span class="material-symbols-outlined menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        segment
       </span>
-    </a>
-  </div>
+      <div style="background: #222222" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header top-area">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">D-</h5>
 
 
+          <span class="material-symbols-outlined close" data-bs-dismiss="offcanvas">
+            close
+          </span>
+        </div>
+        <div class="offcanvas-body canvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
+            <div class="link-box  d-flex justify-content-evenly">
+              <li data-bs-dismiss="offcanvas"><a class="link" href="#home">Home</a></li>
+            </div>
+            <div class="link-box  d-flex justify-content-evenly">
+              <li data-bs-dismiss="offcanvas"><a class="link" href="#about">About</a></li>
+            </div>
+            <div class="link-box  d-flex justify-content-evenly">
+              <li data-bs-dismiss="offcanvas"><a class="link" href="#services">Services</a></li>
+            </div>
+            <div class="link-box  d-flex justify-content-evenly">
+              <li data-bs-dismiss="offcanvas"><a class="link" href="#works">Works</a></li>
+            </div>
+            <div class="link-box  d-flex justify-content-evenly">
+              <li data-bs-dismiss="offcanvas"><a class="link" href="#skills">Skills</a></li>
+            </div>
+
+            <div class="link-box  d-flex justify-content-evenly">
+              <li data-bs-dismiss="offcanvas"><a class="link" href="#contact">Contact Us</a></li>
+            </div>
+        </div>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
   <!----home section---->
 
   <section id="home" class="p-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img class="profile" style="height:250px; width:250px; margin-top:20px;" src="/Denex/profile.png" alt="">
+          <img class="profile" style="height:240px; width:240px; margin-top:40px;" src="/Profile.png" alt="">
         </div>
 
         <div class="col-md-6">
           <h4 class="me"><span>Denex A Poulose</span><br> front-end Developer<br> kerala,India</h4>
           <p class="parag" style="font-size:13px;"> "The power of imagination makes us infinite." </p>
 
-<h1 class="shape"><span class="material-symbols-outlined">
-donut_small
-</span></h1>
+          <h1 class="shape"><span class="material-symbols-outlined">
+              home_app_logo
+            </span></h1>
         </div>
       </div>
     </div>
@@ -74,8 +104,11 @@ donut_small
     <div class="container">
       <h1 class="aboutheading text-center">About</h1>
       <div class="row">
+        <h1 class="text99">WHO <br> <span>I AM.</span></h1>
         <p class="description">I am Denex A Poulose , I am a freelance front-end developer. Now I am learning new skills
           and technologies to improve the qualities of my works.<br>I work hard for achieve my dreams.</p>
+
+
       </div>
     </div>
   </section>
@@ -83,19 +116,18 @@ donut_small
   <!--services section-->
 
   <section id="services" class="p-5">
-    <div class="container">
+    <div class="container reveal">
       <h1 class="servicesheading text-center">Services
       </h1>
       <div class="row">
 
         <div class="col-sm-6">
           <div style="display: flex;align-items: center;flex-direction: column; border-radius: 5px; padding:20px;" class="card-body card-bg rounded">
-            <h1 class="material-symbols-outlined" style="color:#00ce79;">
+            <h1 class="material-symbols-outlined" style="color:#9550f2;">
               laptop
             </h1>
             <h5 class="card-title text-center" style="font-weight: 400; color: grey;">Web Design</h5>
-            <p class="card-text text-center" style="font-size:12px;color: #fff">With supporting text below as a natural lead-in
-              to additional content.
+            <p class="card-text text-center" style="font-size:12px;color: #111111">Making creative and interactive designs.
             </p>
           </div>
         </div>
@@ -115,26 +147,79 @@ donut_small
             </div>
           </div> -->
           <div style="display: flex;align-items: center;flex-direction: column;border-radius: 5px;  padding:20px;" class="card-body card-bg rounded">
-            <h1 class="material-symbols-outlined" style="color:#00ce79;">
-              polyline
+            <h1 class="material-symbols-outlined" style="color:#9450f2;">
+              shape_line
             </h1>
             <h5 class="card-title text-center" style="font-weight: 400; color: grey;">Graphic Design</h5>
-            <p class="card-text text-center" style="font-size:12px; color:#fff;">With supporting text below as a natural lead-in
-              to additional content.
+            <p class="card-text text-center" style="font-size:12px; color:#111111;"> Creative and standard designing.
             </p>
           </div>
         </div>
 
-
+        <div class="text101">BE CREATIVE.</div>
       </div>
     </div>
   </section>
+
+  <!----works section---->
+
+  <section id="works" class="p-5">
+    <div class="container reveal">
+      <h1 class="servicesheading text-center">Works
+      </h1>
+      <div class="row">
+
+        <div class="col-sm-6">
+          <div style="display: flex;
+          align-items: center;
+          flex-direction: column; 
+          border-radius: 20px; 
+          padding:20px;
+          box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);" class="card-body proj-card rounded">
+            <h1 style="color:#111111; margin:5px; font-size:20px;">
+              Item-cart
+            </h1>
+            <img class="proj" src="/proj1.jpg" alt="...">
+            <a href="https://denex8poulose.github.io/Item-cart/"><button class="view">View this</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div style="display: flex;align-items: center;flex-direction: column;border-radius: 20px;  padding:20px;box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);" class="card-body proj-card rounded">
+            <h1 style="color:#111111; margin:5px;font-size: 20px; ">
+              MARS-THREE.js
+            </h1>
+            <img class="proj" src="/proj2.jpg" alt="">
+            <a href="https://denex8poulose.github.io/MARS-THREE.js/"><button class="view">View this</button></a>
+
+          </div>
+
+        </div>
+        <div class="col-sm-6">
+          <div style="display: flex;align-items: center;flex-direction: column;border-radius: 20px;  padding:20px;
+          box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);" class="card-body proj-card rounded">
+            <h1 style="color:#111111; margin:5px; font-size: 20px;">
+              Encounter
+            </h1>
+            <img class="proj" src="/proj3.jpg" alt="">
+            <a href="https://denex8poulose.github.io/Encounter/"> <button class="view">View this</button>
+            </a>
+
+          </div>
+        </div>
+
+        <h1 class="text100">{ }</h1>
+      </div>
+    </div>
+  </section>
+
 
   <!-----skills section----->
 
   <section id="skills" class="p-5">
     <div class="container">
       <h1 class="skillsheading text-center">Skills</h1>
+
       <div class="row d-flex justify-content-evenly
     ">
 
@@ -180,6 +265,7 @@ donut_small
 
 
         </div>
+        
 
 
       </div>
@@ -214,12 +300,12 @@ donut_small
         <div class="col-md-12 text-center">
 
           <div class="link">
-            
+
 
 
 
             <a href="https://github.com/Denex8Poulose/">
-              <img class="github" src="/Denex/github.png" alt="githubLogo">
+              <img class="github" src="/github.png" alt="githubLogo">
 
             </a>
           </div>
