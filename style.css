@@ -6,9 +6,21 @@
 
 }
 
+:root {
+  --primarary-color: #e9edf5;
+  --secondary-color: #111111;
+
+}
+
+.dark-theme {
+  --primarary-color: #111111;
+  --secondary-color: #e9edf5;
+}
+
+
 body {
   margin: 0;
-
+  transition: all ease .6s;
   font-weight: 100;
 }
 
@@ -18,9 +30,12 @@ body {
 }
 
 /* navbar styling */
+
+
+
 .nav-bar {
   position: fixed;
-  background: #e9edf5;
+  background: var(--primarary-color);
   opacity: .9;
 
 
@@ -37,7 +52,7 @@ html {
 
 
 .menu {
-  color: #111111;
+  color: var(--secondary-color);
   font-size: 30px;
 
 }
@@ -93,7 +108,7 @@ html {
 /*home styling*/
 
 #home {
-  background: #e9edf5;
+  background: var(--primarary-color);
 }
 
 
@@ -124,7 +139,7 @@ html {
 
 .me span {
   font-size: 28px;
-  color: #111111;
+  color: var(--secondary-color);
 }
 
 .me span::selection {
@@ -140,23 +155,27 @@ html {
 .shape {
   color: #9450f2;
   text-align: right;
-  animation: spin 30s infinite;
+  animation: move 840s linear infinite;
+
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  cursor: pointer;
 
 }
 
-@keyframes spin {
+@keyframes move {
   100% {
-
-
-    transform: rotateX(360deg);
-
+    transform: translateY(-100000px);
   }
-
-
 }
+
 
 .parag {
-  color: #111111;
+  color: var(--secondary-color);
 }
 
 .parag::selection {
@@ -168,7 +187,7 @@ html {
 
 /*about styling*/
 #about {
-  background-color: #e9edf5;
+  background-color: var(--primarary-color);
 
 
 }
@@ -187,7 +206,7 @@ html {
 }
 
 .description {
-  color: #111111;
+  color: var(--secondary-color);
   font-size: 13px;
 
 }
@@ -204,6 +223,13 @@ html {
   margin-bottom: 30px;
   opacity: .07;
   font-family: 'Josefin Sans', sans-serif;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  cursor: pointer;
 }
 
 .text99 span {
@@ -216,7 +242,7 @@ html {
 /*services styling*/
 
 #services {
-  background: #e9edf5;
+  background: var(--primarary-color);
 
 }
 
@@ -239,6 +265,13 @@ html {
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
   transition: all ease 0.6s;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  cursor: pointer;
 
 }
 
@@ -254,18 +287,25 @@ html {
   text-align: center;
   opacity: .07;
   font-family: 'Josefin Sans', sans-serif;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  cursor: pointer;
 }
 
 /* works styling */
 
 
 #works {
-  background: #e9edf5;
+  background: var(--primarary-color);
 
 }
 
 .proj-card {
-  background: none;
+  background: var(--primarary-color);
   margin: 5px;
 
 }
@@ -304,10 +344,13 @@ html {
   font-family: 'Josefin Sans', sans-serif;
   padding-top: 40px;
   text-align: right;
--webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-cursor: pointer;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  cursor: pointer;
 }
 
 
@@ -317,7 +360,7 @@ cursor: pointer;
 
 
 #skills {
-  background: #e9edf5;
+  background: var(--primarary-color);
 
 }
 
@@ -337,6 +380,13 @@ cursor: pointer;
   backdrop-filter: blur(30px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  cursor: pointer;
 }
 
 .skill-bars .bar {
@@ -355,7 +405,7 @@ cursor: pointer;
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
-  color: #111111;
+  color: var(--secondary-color);
   animation: showText 0.5s 1s linear forwards;
 }
 
@@ -431,7 +481,7 @@ cursor: pointer;
   right: 0;
   font-weight: 500;
   background: grey;
-  color: #111111;
+  color: var(--secondary-color);
   padding: 1px 8px;
   font-size: 12px;
   border-radius: 3px;
@@ -444,7 +494,7 @@ cursor: pointer;
   padding-top: 10px;
   font-size: 13px;
   font-weight: 300;
-  color: #111111;
+  color: var(--secondary-color);
 }
 
 
@@ -452,7 +502,7 @@ cursor: pointer;
 /*contact styling*/
 
 #contact {
-  background: #e9edf5;
+  background: var(--primarary-color);
 
 }
 
@@ -465,7 +515,7 @@ cursor: pointer;
 }
 
 .queries {
-  color: #111111;
+  color: var(--secondary-color);
   font-size: 14px;
 }
 
@@ -568,7 +618,7 @@ button:hover .button-text {
 
 .footer {
   height: 100%;
-  background: #e9edf5;
+  background: var(--primarary-color);
 
 
 }
@@ -633,17 +683,4 @@ button:hover .button-text {
     text-align: left;
 
   }
-}
-
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 2s ease;
-}
-
-.reveal.active {
-  transform: translateY(0px);
-  opacity: 1;
 }

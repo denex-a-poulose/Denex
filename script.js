@@ -1,19 +1,21 @@
-window.addEventListener('scroll', reveal);
+var icon = document.getElementById('icon');
 
-function reveal() {
-  var reveals = document.querySelectorAll('.reveal');
 
-  for (var i = 0; i < reveals.length; i++) {
+icon.onclick = function() {
+  document.body.classList.toggle('dark-theme');
 
-    var windowheight = window.innerHeight;
-    var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 1;
 
-    if (revealtop < windowheight - revealpoint) {
-      reveals[i].classList.add('active');
-    }
-    else {
-      reveals[i].classList.remove('active');
-    }
+  if (document.body.classList.contains('dark-theme')) {
+    icon.style.color = "#e9e5f5";
+    icon.style.transform = "rotateZ(180deg)"
+    icon.style.transition = "all ease 1s";
+    elements.style.transition = 'all ease 1s';
+
+
+  } else {
+    icon.style.color = "#9450f2";
+    icon.style.transform = "rotateZ(-180deg)"
+    icon.style.transition = "all ease 1s";
+
   }
 }

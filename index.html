@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Denex A Poulose</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="Icon.png">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-------bootstrap css links------>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -30,17 +30,20 @@
 
 <body>
   <!----Navbar----->
-
   <nav class="navbar nav-bar fixed-top">
+
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home">D-</a>
+      <span id="icon">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </span>
+      <a style="font-size: 20px; color:#9450f2; font-weight: bold;" class="navbar-brand" href="#home">D-</a>
 
       <span class="material-symbols-outlined menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         segment
       </span>
       <div style="background: #222222" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header top-area">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">D-</h5>
+          <h5 style="color: #e9edf5;" class="offcanvas-title" id="offcanvasNavbarLabel">D-</h5>
 
 
           <span class="material-symbols-outlined close" data-bs-dismiss="offcanvas">
@@ -79,7 +82,7 @@
   <!----home section---->
 
   <section id="home" class="p-5">
-    <div class="container">
+    <div data-aos="fade-up" data-aos-duration="2000" class="container">
       <div class="row">
         <div class="col-md-6">
           <img class="profile" style="height:240px; width:240px; margin-top:40px;" src="Profile.png" alt="">
@@ -89,9 +92,6 @@
           <h4 class="me"><span>Denex A Poulose</span><br> front-end Developer<br> kerala,India</h4>
           <p class="parag" style="font-size:13px;"> "The power of imagination makes us infinite." </p>
 
-          <h1 class="shape"><span class="material-symbols-outlined">
-              home_app_logo
-            </span></h1>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@
   <!---About section-->
 
   <section id="about" class="p-5">
-    <div class="container">
+    <div data-aos="fade-right" data-aos-duration="2000" class="container">
       <h1 class="aboutheading text-center">About</h1>
       <div class="row">
         <h1 class="text99">WHO <br> <span>I AM.</span></h1>
@@ -116,12 +116,12 @@
   <!--services section-->
 
   <section id="services" class="p-5">
-    <div class="container reveal">
+    <div class="container">
       <h1 class="servicesheading text-center">Services
       </h1>
       <div class="row">
 
-        <div class="col-sm-6">
+        <div data-aos="fade-right" data-aos-duration="2000" class="col-sm-6">
           <div style="display: flex;align-items: center;flex-direction: column; border-radius: 5px; padding:20px;" class="card-body card-bg rounded">
             <h1 class="material-symbols-outlined" style="color:#9550f2;">
               laptop
@@ -131,7 +131,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div data-aos="fade-up" data-aos-duration="2000" class="col-sm-6">
           <!-- <div class="card m-2 border-0">
             <div class="card-body card-bg rounded" style="background-color: 'red'; width: 100%;">
               <div >
@@ -164,12 +164,13 @@
   <!----works section---->
 
   <section id="works" class="p-5">
-    <div class="container reveal">
+    <div class="container">
+
       <h1 class="servicesheading text-center">Works
       </h1>
       <div class="row">
 
-        <div class="col-sm-6">
+        <div data-aos="fade-right" data-aos-duration="2000" class="col-sm-6">
           <div style="display: flex;
           align-items: center;
           flex-direction: column; 
@@ -184,7 +185,7 @@
             </a>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div data-aos="fade-up" data-aos-duration="2000" class="col-sm-6">
           <div style="display: flex;align-items: center;flex-direction: column;border-radius: 20px;  padding:20px;box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);" class="card-body proj-card rounded">
             <h1 style="color:#111111; margin:5px;font-size: 20px; ">
               MARS-THREE.js
@@ -195,7 +196,7 @@
           </div>
 
         </div>
-        <div class="col-sm-6">
+        <div data-aos="fade-right" data-aos-duration="2000" class="col-sm-6">
           <div style="display: flex;align-items: center;flex-direction: column;border-radius: 20px;  padding:20px;
           box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);" class="card-body proj-card rounded">
             <h1 style="color:#111111; margin:5px; font-size: 20px;">
@@ -217,8 +218,9 @@
   <!-----skills section----->
 
   <section id="skills" class="p-5">
-    <div class="container">
-      <h1 class="skillsheading text-center">Skills</h1>
+    <div class="container data-aos=" fade-up" data-aos-duration="2000"">
+
+      <h1 class=" skillsheading text-center">Skills</h1>
 
       <div class="row d-flex justify-content-evenly
     ">
@@ -265,7 +267,7 @@
 
 
         </div>
-        
+
 
 
       </div>
@@ -278,7 +280,7 @@
   <section id="contact" class="p-5">
     <div class="container">
       <h1 class="cont text-center">Contact me</h1>
-      <div class="row  d-flex justify-content-evenly">
+      <div data-aos="fade-right" data-aos-duration="2000" class="row  d-flex justify-content-evenly">
         <p class="queries pt-3">Contact me by mail for creative and best services provided by me!</p>
         <a href="mailto:%20denexdnx5@gmail.com">
           <button class="learn-more">
@@ -325,6 +327,13 @@
 
   <!---------bootstrap javascript links------->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
