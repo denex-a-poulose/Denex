@@ -13,5 +13,7 @@
 ### framework  
 > - BOOTSTRAP
 ---
-![logo](Icon.png)
+
+
+<p align="center"><img src="Icon.png" width="400" height="400" alt="icon"></p>
 
