@@ -304,7 +304,9 @@ html {
   font-family: 'Josefin Sans', sans-serif;
   padding-top: 40px;
   text-align: right;
-
+-webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 
 }
 
