@@ -2,7 +2,7 @@
 
 **This is my portfolio website**
 ---
-[Denex](https://denex8poulose.github.io/Denex/)
+[Denex](https://denex-a-poulose.github.io/Denex/)
 
  ## languages used  
 
