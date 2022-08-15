@@ -284,7 +284,7 @@ html {
   color: #9450f2;
   font-size: 60px;
   font-family: bold;
-  text-align: center;
+  margin:auto;
   opacity: .07;
   font-family: 'Josefin Sans', sans-serif;
   -webkit-user-select: none;
@@ -292,8 +292,8 @@ html {
   -ms-user-select: none;
   /* IE 10 and IE 11 */
   user-select: none;
-  /* Standard syntax */
-  cursor: pointer;
+  
+
 }
 
 /* works styling */
