@@ -29,6 +29,10 @@
 </head>
 
 <body>
+
+  <div id="preloader">
+
+  </div>
   <!----Navbar----->
   <nav class="navbar nav-bar fixed-top">
 
@@ -131,20 +135,7 @@
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000" class="col-sm-6">
-          <!-- <div class="card m-2 border-0">
-            <div class="card-body card-bg rounded" style="background-color: 'red'; width: 100%;">
-              <div >
-                <h1 class="material-symbols-outlined align-self-center bg-danger" style="color:grey;">
-                  polyline
-                </h1>
-              </div>
-              <h5 class="card-title text-center" style="font-weight: 400;">Graphic Design</h5>
-              <p class="card-text text-center" style="font-size:12px;">With supporting text below as a natural lead-in
-                to additional content.
-              </p>
 
-            </div>
-          </div> -->
           <div style="display: flex;align-items: center;flex-direction: column;border-radius: 5px;  padding:20px;" class="card-body card-bg rounded">
             <h1 class="material-symbols-outlined" style="color:#9450f2;">
               shape_line
@@ -155,7 +146,7 @@
           </div>
         </div>
 
-        
+
       </div>
     </div>
   </section>
@@ -175,7 +166,7 @@
           flex-direction: column; 
           border-radius: 20px; 
           padding:20px;
-          box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);" class="card-body proj-card rounded">
+          " class="card-body proj-card rounded">
             <h1 style="color:#111111; margin:5px; font-size:20px;">
               Item-cart
             </h1>
@@ -185,7 +176,7 @@
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000" class="col-sm-6">
-          <div style="display: flex;align-items: center;flex-direction: column;border-radius: 20px;  padding:20px;box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);" class="card-body proj-card rounded">
+          <div style="display: flex;align-items: center;flex-direction: column;border-radius: 20px;  padding:20px;" class="card-body proj-card rounded">
             <h1 style="color:#111111; margin:5px;font-size: 20px; ">
               MARS-THREE.js
             </h1>
@@ -197,7 +188,7 @@
         </div>
         <div data-aos="fade-right" data-aos-duration="2000" class="col-sm-6">
           <div style="display: flex;align-items: center;flex-direction: column;border-radius: 20px;  padding:20px;
-          box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);" class="card-body proj-card rounded">
+          " class="card-body proj-card rounded">
             <h1 style="color:#111111; margin:5px; font-size: 20px;">
               Encounter
             </h1>
@@ -208,74 +199,13 @@
           </div>
         </div>
 
-        
+
       </div>
     </div>
   </section>
 
 
-  <!-----skills section----->
 
-  <section id="skills" class="p-5">
-    <div class="container data-aos=" fade-up" data-aos-duration="2000"">
-
-      <h1 class=" skillsheading text-center">Skills</h1>
-
-      <div class="row d-flex justify-content-evenly">
-
-
-  
-
-
-        <div class="skill-bars">
-          <div class="bar">
-            <div class="info">
-              <span>HTML</span>
-            </div>
-            <div class="progress-line html">
-              <span></span>
-              <h1 class="percentage">80%</h1>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>CSS</span>
-            </div>
-            <div class="progress-line css">
-              <span></span>
-              <h1 class="percentage">60%</h1>
-            </div>
-          </div>
-
-          <div class="bar">
-            <div class="info">
-              <span>Python</span>
-            </div>
-            <div class="progress-line python">
-              <span></span>
-              <h1 class="percentage">30%</h1>
-            </div>
-          </div>
-
-          <div class="bar">
-            <div class="info">
-              <span>Javascript</span>
-            </div>
-            <div class="progress-line javascript">
-              <span></span>
-              <h1 class="percentage">50%</h1>
-            </div>
-          </div>
-
-
-        </div>
-
-
-
-        
-      </div>
-    </div>
-  </section>
 
   <!-----contact section------->
 
@@ -336,6 +266,14 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    var loader = document.getElementById('preloader');
+
+    window.addEventListener('load', function() {
+      loader.style.display = 'none';
+    })
   </script>
 </body>
 
